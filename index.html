@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+        body{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background:linear-gradient(to right, #E2DFD2,#958998) ;
+        }
+        
+        .main2{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 150px;
+            padding: 50px;
+            border-radius: 10px;
+            background-color: #FAF9F6;
+            box-shadow: 0,5px,4px rgba(0, 0, 0, 0.3);
+        }
+        .heading{
+            color: rgb(39, 32, 40);
+            margin: 0px;
+        }
+        .para{
+            padding: 10px;
+            font-size: 20px;
+            font-style: italic;
+        }
+        .counter-value{
+            font-size: 50px;
+            padding-bottom: 20px;
+        }
+        button {
+            background-color: #4CAF50; 
+            color: white; 
+            border: none; 
+            padding: 10px 20px;
+            font-size: 16px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease; 
+        }
+
+        
+        button:hover {
+            background-color: #45a049; 
+        }
+
+        
+        #reset-btn {
+            background-color: #4e4c4e; 
+        }
+
+        #reset-btn:hover {
+            background-color: #424042; 
+        }
+
+        #decrease-btn {
+            background-color: #d33b3b; 
+        }
+
+        #decrease-btn:hover {
+            background-color: #bd3636; 
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="main2">
+            <div class="heading">
+                <h1>Counter App</h1>
+            </div>
+            <div class="para">
+                <p>This is a simple counter application. Use the buttons to increase, decrease, or reset counter value.</p>
+            </div>
+            <div id="counter-value" class="counter-value">0</div>
+            <div class="btn">
+                <button id="increase-btn">Increase</button>
+                <button id="reset-btn">Reset</button>
+                <button id="decrease-btn">Decrease</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
